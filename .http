@@ -1,0 +1,61 @@
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGQzYzdhYWVmYTg0NDExOTIwMmU0N2MiLCJ1c2VybmFtZSI6IkZyaW5jZXNzIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU5MjI3NzE2LCJleHAiOjE3NTkyMjk1MTZ9.-biFPyclSB5h9Fujrgwb01xAefQFAC_Q4mQP4fpMnuE
+@baseUrl = http://localhost:5000
+GET {{baseUrl}}/api/auth/users
+Authorization: Bearer {{token}}
+
+
+###
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"Jhon Doe II",
+    "email":"example7@email.com",
+    "password":"ma2ma2ma2@143",
+    "role":"user"
+}
+
+###
+
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"Frincess",
+    "password":"ma2ma2ma2@143"
+   
+}
+
+###
+
+GET {{baseUrl}}/api/home/welcome
+Authorization: Bearer {{token}}
+
+
+###
+
+GET {{baseUrl}}/api/admin/welcome
+Authorization: Bearer {{token}}
+
+
+
+###
+
+GET {{baseUrl}}/api/image/get?page=3&limit=3&sortOrder="desc"
+Authorization: Bearer {{token}}
+
+
+
+###
+PUT {{baseUrl}}/api/auth/change-password
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "oldPassword":"ma2ma2ma2@143",
+    "newPassword":"Ma2ma2ma2@143"
+}
+###
+
+DELETE  {{baseUrl}}/api/image/68dbad2716f30964edb51370
+Authorization: Bearer {{token}}
