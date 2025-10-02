@@ -1,5 +1,6 @@
-@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGQzYzdhYWVmYTg0NDExOTIwMmU0N2MiLCJ1c2VybmFtZSI6IkZyaW5jZXNzIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU5MjI3NzE2LCJleHAiOjE3NTkyMjk1MTZ9.-biFPyclSB5h9Fujrgwb01xAefQFAC_Q4mQP4fpMnuE
-@baseUrl = http://localhost:5000
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGRlYWUyZmJhNTE1YzFiOGU0MDExZWYiLCJ1c2VybmFtZSI6IkZyaW5jZXNzIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU5NDI0Mjc0LCJleHAiOjE3NTk0MjYwNzR9.xjDCIP5PnvcwH5Rh4cuOorAWzcCD3PPoYXHMjeGop0A
+# @baseUrl = http://localhost:5000
+@baseUrl=https://node-deployment-lesson.onrender.com
 GET {{baseUrl}}/api/auth/users
 Authorization: Bearer {{token}}
 
@@ -9,10 +10,10 @@ POST {{baseUrl}}/api/auth/register
 Content-Type: application/json
 
 {
-    "username":"Jhon Doe II",
-    "email":"example7@email.com",
+    "username":"Frincess",
+    "email":"example@email.com",
     "password":"ma2ma2ma2@143",
-    "role":"user"
+    "role":"admin"
 }
 
 ###
