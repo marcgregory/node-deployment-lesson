@@ -42,7 +42,7 @@ Authorization: Bearer {{token}}
 
 ###
 
-GET {{baseUrl}}/api/image/get?page=3&limit=3&sortOrder="desc"
+GET {{baseUrl}}/api/image/get
 Authorization: Bearer {{token}}
 
 
